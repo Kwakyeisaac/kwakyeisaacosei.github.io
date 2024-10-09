@@ -1,5 +1,7 @@
 School Management System for Ghana Basic Schools
+
 Project Overview
+
 The School Management System (SMS) is a comprehensive web application specifically designed to streamline administrative tasks for Basic Schools in Ghana. This system helps school administrators, teachers, and staff manage critical operations such as student records, attendance tracking, fee payments, BECE exam preparation, and much more, while ensuring compliance with the Ghana Education Service (GES) standards.
 
 This SMS is designed to be intuitive, user-friendly, and scalable, helping schools digitize their operations for improved efficiency.
