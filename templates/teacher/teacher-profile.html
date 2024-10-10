@@ -1,0 +1,125 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <img style="height:200px; width:200px; border-radius:50%; margin:auto" src="{{ teacher.photo.url }}" alt="Photo">
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="personal_information">
+        <div class="row">
+          <h2 class="mx-auto">Personal Information</h2>
+        </div>
+        <hr>
+        <div class="row">
+          <div style="font-size:24px; margin-left: 30px">
+            <pre>Name                    : {{ teacher.name }}</pre>
+            <pre>Date of Birth           : {{ teacher.date_of_birth }}</pre>
+            <pre>Place of Birth          : {{ teacher.place_of_birth }}</pre>
+            <pre>Nationality             : {{ teacher.nationality }}</pre>
+            <pre>Religion                : {{ teacher.religion }}</pre>
+            <pre>Gender                  : {{ teacher.gender }}</pre>
+            <pre>Blood Group             : {{ teacher.blood_group }}</pre>
+            <pre>SSNIT                   : {{ teacher.SSNIT }}</pre>
+            <pre>Ghana Card ID           : {{ teacher.nid }}</pre>
+            <pre>Driving License/Passport: {{ teacher.driving_license_passport }}</pre>
+            <pre>Phone No                : {{ teacher.phone_no }}</pre>
+            <pre>Email                   : {{ teacher.email }}</pre>
+            <pre>Father`s Name           : {{ teacher.father_name }}</pre>
+            <pre>Mother`s Name           : {{ teacher.mother_name }}</pre>
+            <pre>Marital Status          : {{ teacher.marital_status }}</pre>
+            <pre>Address                 : {{ teacher.address }}</pre>
+            <pre>Education               : {{ teacher.education }}</pre>
+            <pre>Training                : {{ teacher.training }}</pre>
+            <pre>Job                     : {{ teacher.job }}</pre>
+            <pre>Exprience               : {{ teacher.experience }}</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="address_information">
+        <div class="row">
+          <h2 class="mx-auto">Address Information</h2>
+        </div>
+        <hr>
+        <div class="row">
+          <div style="font-size:24px; margin-left: 30px">
+            <pre>District: {{ teacher.address.district }}</pre>
+            <pre>Region	 : {{ teacher.address.region }}</pre>
+            <pre>Teacher Union   : {{ teacher.address.union }}</pre>
+            <pre>Town : {{ teacher.address.town }}</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="address_information">
+        <div class="row">
+          <h2 class="mx-auto">Education Information</h2>
+        </div>
+        <hr>
+        <div class="row">
+          <div style="font-size:24px; margin-left: 30px">
+            <pre>Name of Exam: {{ teacher.education.name_of_exam }}</pre>
+            <pre>Institute   : {{ teacher.education.institute }}</pre>
+            <pre>Group       : {{ teacher.education.group }}</pre>
+            <pre>Grade/GPA   : {{ teacher.education.grade }}</pre>
+            <pre>Board       : {{ teacher.education.board }}</pre>
+            <pre>Graduating Year: {{ teacher.education.graduating_year }}</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="emergency_contact_information">
+        <div class="row">
+          <h2 class="mx-auto">CPD/PLC Information</h2>
+        </div>
+        <hr>
+        <div class="row">
+          <div style="font-size:24px; margin-left: 30px">
+            <pre>Training Name: {{ teacher.training.cpd/plc_name }}</pre>
+            <pre>Year         : {{ teacher.training.year }}</pre>
+            <pre>Duration     : {{ teacher.training.duration }}</pre>
+            <pre>Place        : {{ teacher.training.place }}</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="emergency_contact_information">
+        <div class="row">
+          <h2 class="mx-auto">Job Information</h2>
+        </div>
+        <hr>
+        <div class="row">
+          <div style="font-size:24px; margin-left: 30px">
+            <pre>Category                 : {{ teacher.job.category }}</pre>
+            <pre>Date of Appointment      : {{ teacher.job.appointment_date }}</pre>
+            <pre>Institute Name           : {{ teacher.job.institute_name }}</pre>
+            <pre>Department               : {{ teacher.job.department }}</pre>
+            <pre>Scale                    : {{ teacher.job.scale }}</pre>
+            <pre>Salary Grade             : {{ teacher.job.salary_grade }}</pre>
+            <pre>Grade point		  : {{ teacher.job.grade_point }}</pre>
+            <pre>Promotion Due Year       : {{ teacher.job.promotion_due_year }}</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="previous_academic_information">
+        <div class="row">
+          <h2 class="mx-auto">Exprience Information</h2>
+        </div>
+        <hr>
+        <div class="row">
+          <div style="font-size:24px; margin-left: 30px">
+            <pre>Institute Name: {{ teacher.experience.institute_name }}</pre>
+            <pre>Designation   : {{ teacher.experience.designation }}</pre>
+            <pre>Trainer       : {{ teacher.experience.trainer }}</pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
